@@ -19,6 +19,6 @@ or
 * if testing the api on tools like postman you can use the above url and json
 
 * The client app is under web/ folder (CoinDispenserClient.html), So Client just basic html file with javascript,
-you just to open from file explore then open html file with your browser(I was testing on chrome,safari)
+you just to open from file explore then open html file with your browser(I was testing on Firefox,chrome,safari)
 
 * Input the amount (integer) and comma seperated coin denomination then click submit to get the coins, it will then display the result.
