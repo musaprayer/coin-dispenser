@@ -24,6 +24,11 @@ function getCoinsChange() {
     url: "http://localhost:8080/coindispenser/getCoinChange",
     data: JSON.stringify({ "amount": amount, "coinDeno" : coinDeno }),
     contentType: "application/json",
+    headers: {
+        'Access-Control-Allow-Origin': '* ',
+        'Access-Control-Allow-Methods': 'GET,HEAD,OPTIONS,POST,PUT',
+        'Access-Control-Allow-Headers' : "Origin, X-Requested-With, Content-Type, Accept, x-client-key, x-client-token, x-client-secret, Authorization"
+     },
     success: function (data) {
       var displayData = "";
       displayData = '<h4> ' + data.totalNumber + " Total number of coins denomination</h4> <br/>";
