@@ -1,0 +1,24 @@
+Coin Dispenser
+
+How to run the Application
+
+The application is using Spring Boot framework running on java 11.
+Have one rest endpoint (http://localhost:8080/coindispenser/getCoinChange) is POST method
+with input json object format:
+{
+  "amount":"25",
+  "coinDeno":"1,2,3,5,10"
+}
+where amount is the amount Y that needs to be paid out as per requirement; and
+coinDeno is different denomination of coin, must be provide in comma seperated string.
+
+* open the project folder and execute the jar from target folder(java -jar target/coin-dispenser-0.0.1-SNAPSHOT.jar)
+or
+* open the application on IDE and Run the main method - as Spring have in embedded server, it will start the server
+
+* if testing the api on tools like postman you can use the above url and json
+
+* The client app is under web/ folder (CoinDispenserClient.html), So Client just basic html file with javascript,
+you just to open from file explore then open html file with your browser(I was testing on chrome,safari)
+
+* Input the amount (integer) and comma seperated coin denomination then click submit to get the coins, it will then display the result.

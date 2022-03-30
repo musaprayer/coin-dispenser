@@ -1,0 +1,93 @@
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Coin Dispenser</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <h1 style="text-align:center;color:green;">
+        GeeksforGeeks
+    </h1>
+    <form>
+        <div class="form-group">
+            <label for="">Enter Your Name:</label>
+            <input class="form-control"
+                   type="text"
+                   placeholder="Input Your Name Here">
+        </div>
+        <div >
+        <button type="button"
+                id="addButton"
+                class="btn btn-primary"
+                onclick="addClick();">Add Product</button>
+</div>
+    </form>
+</div>
+</body>
+</html>-->
+<!DOCTYPE html>
+<html>
+
+    <head>
+    <title>Coin Dispenser</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <h1>Coin Dispenser</h1>
+                <p></p>
+                <div class="form-group">
+                    <label for="">Enter the amount</label>
+                    <input class="form-control"
+                           type="text"
+                           id="amount"
+                           onfocus="clearError(this)"
+                           placeholder="Input your amount here"
+                    >
+                </div>
+                <div>
+                    <label for="">Enter Coin denomination (, seperated eg. 1,3,5,10)</label>
+                    <input class="form-control"
+                           type="text"
+                           id="coinDeno"
+                           onfocus="clearError(this)"
+                           placeholder="eg. 1,3,5,10"
+                    v>
+                </div>
+                <br/>
+                <div>
+                    <p id="errorDisplay" style="color:red; display:none;">Please enter the amount <br/>
+                    Amount should be an Integer</p>
+                </div>
+
+                <div>
+                    <button type="button"
+                            id="addButton"
+                            class="btn btn-primary"
+                            onclick="getCoinsChange();">Submit</button>
+                </div>
+                <div>
+                    <p id="displayCoins" ></p>
+                </div>
+            </div>
+            <div class="col-sm-4" ></div>
+        </div>
+    </div>
+
+    </body>
+</html>
